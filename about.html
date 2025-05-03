@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Daily Brew</title>
+<!-- Link to the external CSS stylesheet -->
+<link rel="stylesheet" href="styles.css" />
+<!-- Optional: Google Fonts for nicer typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet" />
+<style>
+    /* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf0; /* Light cream background */
+  color: #333;
+}
+
+/* Container for the About section */
+.about-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #fff8f0; /* Slightly warmer background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Flex layout for split design */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text side styling */
+.text-content {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.text-content h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  color: #6f4e37; /* Rich coffee brown */
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #4b3a2e; /* Darker brown for readability */
+}
+
+/* Image side styling */
+.image-content {
+  flex: 1 1 45%;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect on image */
+.image-content img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive styles for smaller screens */
+@media(max-width: 768px){
+  .about-content {
+    flex-direction: column;
+  }
+  .text-content, .image-content {
+    flex: 1 1 100%;
+  }
+  /* Optional: place text after image on small screens */
+  .text-content {
+    order: 2;
+  }
+}
+</style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="about-content">
+    <!-- Text Content -->
+    <div class="text-content">
+      <h2>About Daily Brew</h2>
+      <p>
+        At <strong>Daily Brew</strong>, we are passionate about delivering the freshest, most aromatic coffee to energize your day. Serving a wide variety of coffee from 12am to 12pm, we cater to every coffee lover’s craving.
+      </p>
+      <p>
+        Whether you prefer a bold espresso, a creamy latte, or a smooth drip, our curated selection promises quality and flavor in every cup. Visit us and experience the perfect brew any time of the day!
+      </p>
+    </div>
+    <!-- Image Content -->
+    <div class="image-content">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Steaming coffee cup" />
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
