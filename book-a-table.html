@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Table - Coffee Haven</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f5f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #6f4e37;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      background-color: #6f4e37;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5a3d2b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  ☕ Book a Table - Coffee Haven
+</header>
+
+<div class="container">
+  <h2>Reserve Your Spot</h2>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+
+    <label for="date">Booking Date</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="guests">Number of Guests</label>
+    <select id="guests" name="guests" required>
+      <option value="">Select</option>
+      <option value="1">1 Person</option>
+      <option value="2">2 People</option>
+      <option value="3">3 People</option>
+      <option value="4">4 People</option>
+      <option value="5">5 People</option>
+      <option value="6">6 People</option>
+    </select>
+
+    <label for="requests">Special Requests</label>
+    <textarea id="requests" name="requests" rows="4" placeholder="Any allergies, preferences, etc."></textarea>
+
+    <button type="submit">Book Table</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Coffee Haven. All rights reserved.
+</footer>
+
+</body>
+</html>
